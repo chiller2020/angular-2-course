@@ -1,4 +1,4 @@
-# Project Title
+# Angular 2 Course
 
 My local work files following the great
 
