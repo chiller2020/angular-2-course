@@ -2,9 +2,7 @@ import {Component} from 'angular2/core'
 
 @Component({
     selector: 'favourite',
-    template: `
-              <div (click)="onClick()" class="glyphicon" [class.glyphicon-star]="getClicked()" [class.glyphicon-star-empty]="getNotClicked()" ></div>
-              `
+    templateUrl:'app/favourite.template.html' 
         
 })
 export class FavouriteComponent{

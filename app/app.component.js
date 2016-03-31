@@ -1,4 +1,4 @@
-System.register(['angular2/core', './courses.component', './authors.component', './favourite.component'], function(exports_1, context_1) {
+System.register(['angular2/core', './courses.component', './authors.component', './favourite.component', './like.component', './voter.component'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['angular2/core', './courses.component', './authors.component', 
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, courses_component_1, authors_component_1, favourite_component_1;
+    var core_1, courses_component_1, authors_component_1, favourite_component_1, like_component_1, voter_component_1;
     var AppComponent;
     return {
         setters:[
@@ -25,16 +25,25 @@ System.register(['angular2/core', './courses.component', './authors.component', 
             },
             function (favourite_component_1_1) {
                 favourite_component_1 = favourite_component_1_1;
+            },
+            function (like_component_1_1) {
+                like_component_1 = like_component_1_1;
+            },
+            function (voter_component_1_1) {
+                voter_component_1 = voter_component_1_1;
             }],
         execute: function() {
             AppComponent = (function () {
                 function AppComponent() {
                 }
+                AppComponent.prototype.onVote = function ($event) {
+                    console.log($event);
+                };
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'my-app',
-                        template: "<h1>Hello Angular</h1>\n               <courses></courses>\n               <authors></authors>\n               <favourite></favourite>",
-                        directives: [courses_component_1.CoursesComponent, authors_component_1.AuthorsComponent, favourite_component_1.FavouriteComponent]
+                        template: "<h1>Hello Angular</h1>\n               <courses></courses>\n               <authors></authors>\n               <favourite></favourite> <br>\n               <like></like>\n               <voter (vote)=\"onVote($event)\" [nVotes]=\"13\" ></voter>",
+                        directives: [courses_component_1.CoursesComponent, authors_component_1.AuthorsComponent, favourite_component_1.FavouriteComponent, like_component_1.LikeComponent, voter_component_1.VoterComponent]
                     }), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);
