@@ -18,13 +18,13 @@ export class LikeComponent{
  
    if(this.isClicked == false) 
    {
-    this.isClicked =true;
-    this.nLikes++;
+      this.isClicked =true;
+      this.nLikes++;
    }
    else
    {
-         this.isClicked =false;
-         this.nLikes--;
+     this.isClicked =false;
+     this.nLikes--;
    }
  }
  
