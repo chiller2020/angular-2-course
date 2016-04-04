@@ -8,21 +8,21 @@ import {TweetListComponent} from './tweetlist.component'
 
 
 @Component({
-    selector: 'my-app',
-    template: `<tweetlist></tweetlist>`,
-               
-    directives:[CoursesComponent,AuthorsComponent,FavouriteComponent,LikeComponent,VoterComponent,TweetListComponent]
-    
-})    
-export class AppComponent { 
-    
-    
-    onVote($event){
-        
-        console.log($event);
-        
-    }
-    
+  selector: 'my-app',
+  template: `<tweetlist></tweetlist>`,
+
+  directives: [CoursesComponent, AuthorsComponent, FavouriteComponent, LikeComponent, VoterComponent, TweetListComponent]
+
+})
+export class AppComponent {
+
+
+  onVote($event) {
+
+    console.log($event);
+
+  }
+
 }
 
 

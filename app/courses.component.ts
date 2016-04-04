@@ -3,8 +3,8 @@ import {CourseService} from './course.service'
 import {AutoGrowDirective} from './auto-grow.directive'
 
 @Component({
-    selector: 'courses',
-    template: `
+  selector: 'courses',
+  template: `
               <h2>Courses</h2>
               {{title}}
               <input type="text" autoGrow />
@@ -14,16 +14,16 @@ import {AutoGrowDirective} from './auto-grow.directive'
                 </li>
               </ul>
               `,
-    providers: [CourseService],
-    directives:[AutoGrowDirective]
+  providers: [CourseService],
+  directives: [AutoGrowDirective]
 })
-export class CoursesComponent{
- 
- title: string ='The Title of the courses page';
- courses;
- 
- constructor(courseService: CourseService){
-     this.courses = courseService.getCourses();
- }
-    
+export class CoursesComponent {
+
+  title: string = 'The Title of the courses page';
+  courses;
+
+  constructor(courseService: CourseService) {
+    this.courses = courseService.getCourses();
+  }
+
 }
