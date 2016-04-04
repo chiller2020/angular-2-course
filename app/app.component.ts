@@ -5,13 +5,16 @@ import {FavouriteComponent} from './favourite.component'
 import {LikeComponent} from './like.component'
 import {VoterComponent} from './voter.component'
 import {TweetListComponent} from './tweetlist.component'
+import {ZippyComponent} from './zippy.component'
 
 
 @Component({
   selector: 'my-app',
-  template: `<tweetlist></tweetlist>`,
+  template: `<zippy title="My Zippy Components Title">
+                 Wow im putting Some Content in here !!! 
+             </zippy>`,
 
-  directives: [CoursesComponent, AuthorsComponent, FavouriteComponent, LikeComponent, VoterComponent, TweetListComponent]
+  directives: [CoursesComponent, AuthorsComponent, FavouriteComponent, LikeComponent, VoterComponent, TweetListComponent,ZippyComponent]
 
 })
 export class AppComponent {
@@ -32,5 +35,6 @@ export class AppComponent {
                <authors></authors>
                <favourite></favourite> <br>
                <like></like>
-               <voter (vote)="onVote($event)" [nVotes]="13" ></voter>`
+               <voter (vote)="onVote($event)" [nVotes]="13" ></voter>
+               <tweetlist></tweetlist>`
 */
