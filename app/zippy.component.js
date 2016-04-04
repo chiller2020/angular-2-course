@@ -33,7 +33,7 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                 ZippyComponent = __decorate([
                     core_1.Component({
                         selector: 'zippy',
-                        template: "<div class =\"zippy\">\n                 <div class = \"zippy-tytle\" (click)=\"onClick()\">\n                   {{title}}\n                   <i class=\"pull-right glyphicon\" [ngClass]=\"{ 'glyphicon-chevron-down': !isExpanded,'glyphicon-chevron-up': isExpanded}\"></i>                  \n                 </div>\n                 <div *ngIf=\"isExpanded\" class=\"zippy-content\">\n                   <ng-content></ng-content>\n                 </div>\n               </div>",
+                        template: "<div class=\"zippy\">\n                 <div class=\"zippy-tytle\" (click)=\"onClick()\">\n                   {{title}}\n                   <i class=\"pull-right glyphicon\" [ngClass]=\"{ 'glyphicon-chevron-down': !isExpanded,'glyphicon-chevron-up': isExpanded}\"></i>\n                 </div>\n                 <div *ngIf=\"isExpanded\" class=\"zippy-content\">\n                   <ng-content></ng-content>\n                 </div>\n               </div>",
                         styles: [".zippy{ width : 300px; border: solid 2px;}"]
                     }), 
                     __metadata('design:paramtypes', [])
