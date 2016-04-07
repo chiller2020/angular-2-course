@@ -6,15 +6,14 @@ import {LikeComponent} from './like.component'
 import {VoterComponent} from './voter.component'
 import {TweetListComponent} from './tweetlist.component'
 import {ZippyComponent} from './zippy.component'
+import {ContactFormComponent} from './contact-form.component'
 
 
 @Component({
   selector: 'my-app',
-  template: `<zippy title="My Zippy Components Title">
-                 Wow im putting Some Content in here !!! 
-             </zippy>`,
-
-  directives: [CoursesComponent, AuthorsComponent, FavouriteComponent, LikeComponent, VoterComponent, TweetListComponent,ZippyComponent]
+  template: `<contact-form></contact-form>`,
+  //kept to make it possible to use all templates from course on the fly
+  directives: [CoursesComponent, AuthorsComponent, FavouriteComponent, LikeComponent, VoterComponent, TweetListComponent,ZippyComponent,ContactFormComponent]
 
 })
 export class AppComponent {
@@ -29,12 +28,15 @@ export class AppComponent {
 }
 
 
-//template used before section 4 last challenge
+//template parts used before last challenge
 /*template: `<h1>Hello Angular</h1>
                <courses></courses>
                <authors></authors>
                <favourite></favourite> <br>
                <like></like>
                <voter (vote)="onVote($event)" [nVotes]="13" ></voter>
-               <tweetlist></tweetlist>`
+               <tweetlist></tweetlist>
+               <zippy title="My Zippy Components Title">
+                 Wow im putting Some Content in here !!! 
+             </zippy>`
 */

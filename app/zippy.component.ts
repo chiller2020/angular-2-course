@@ -11,7 +11,7 @@ import {Component,Input} from 'angular2/core'
                    <ng-content></ng-content>
                  </div>
                </div>`,
-    styles[`.zippy{ width : 300px; border: solid 2px;}`]
+    styles:[`.zippy{ width : 300px; border: solid 2px;}`]
 })
 export class ZippyComponent {
 
