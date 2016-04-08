@@ -1,4 +1,4 @@
-System.register(['angular2/core', './courses.component', './authors.component', './favourite.component', './like.component', './voter.component', './tweetlist.component', './zippy.component', './contact-form.component'], function(exports_1, context_1) {
+System.register(['angular2/core', './courses.component', './authors.component', './favourite.component', './like.component', './voter.component', './tweetlist.component', './zippy.component', './contact-form.component', './subscription-form.component'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['angular2/core', './courses.component', './authors.component', 
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, courses_component_1, authors_component_1, favourite_component_1, like_component_1, voter_component_1, tweetlist_component_1, zippy_component_1, contact_form_component_1;
+    var core_1, courses_component_1, authors_component_1, favourite_component_1, like_component_1, voter_component_1, tweetlist_component_1, zippy_component_1, contact_form_component_1, subscription_form_component_1;
     var AppComponent;
     return {
         setters:[
@@ -40,6 +40,9 @@ System.register(['angular2/core', './courses.component', './authors.component', 
             },
             function (contact_form_component_1_1) {
                 contact_form_component_1 = contact_form_component_1_1;
+            },
+            function (subscription_form_component_1_1) {
+                subscription_form_component_1 = subscription_form_component_1_1;
             }],
         execute: function() {
             AppComponent = (function () {
@@ -51,9 +54,9 @@ System.register(['angular2/core', './courses.component', './authors.component', 
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'my-app',
-                        template: "<contact-form></contact-form>",
+                        template: "<subscription-form></subscription-form>",
                         //kept to make it possible to use all templates from course on the fly
-                        directives: [courses_component_1.CoursesComponent, authors_component_1.AuthorsComponent, favourite_component_1.FavouriteComponent, like_component_1.LikeComponent, voter_component_1.VoterComponent, tweetlist_component_1.TweetListComponent, zippy_component_1.ZippyComponent, contact_form_component_1.ContactFormComponent]
+                        directives: [courses_component_1.CoursesComponent, authors_component_1.AuthorsComponent, favourite_component_1.FavouriteComponent, like_component_1.LikeComponent, voter_component_1.VoterComponent, tweetlist_component_1.TweetListComponent, zippy_component_1.ZippyComponent, contact_form_component_1.ContactFormComponent, subscription_form_component_1.SubscriptionFormComponent]
                     }), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);
@@ -73,6 +76,7 @@ System.register(['angular2/core', './courses.component', './authors.component', 
                <tweetlist></tweetlist>
                <zippy title="My Zippy Components Title">
                  Wow im putting Some Content in here !!!
-             </zippy>`
+             </zippy>
+             <contact-form></contact-form>`
 */ 
 //# sourceMappingURL=app.component.js.map
