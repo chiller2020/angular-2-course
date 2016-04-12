@@ -8,14 +8,15 @@ import {TweetListComponent} from './tweetlist.component'
 import {ZippyComponent} from './zippy.component'
 import {ContactFormComponent} from './contact-form.component'
 import {SubscriptionFormComponent} from './subscription-form.component'
+import {SignUpFormComponent} from './signup-form.component'
 
 
 
 @Component({
   selector: 'my-app',
-  template: `<subscription-form></subscription-form>`,
+  template: `<signup-form></signup-form>`,
   //kept to make it possible to use all templates from course on the fly
-  directives: [CoursesComponent, AuthorsComponent, FavouriteComponent, LikeComponent, VoterComponent, TweetListComponent,ZippyComponent,ContactFormComponent,SubscriptionFormComponent]
+  directives: [CoursesComponent, AuthorsComponent, FavouriteComponent, LikeComponent, VoterComponent, TweetListComponent,ZippyComponent,ContactFormComponent,SubscriptionFormComponent,SignUpFormComponent]
 
 })
 export class AppComponent {
@@ -41,5 +42,6 @@ export class AppComponent {
                <zippy title="My Zippy Components Title">
                  Wow im putting Some Content in here !!! 
              </zippy>
-             <contact-form></contact-form>`
+             <contact-form></contact-form>
+             <subscription-form></subscription-form>`
 */
